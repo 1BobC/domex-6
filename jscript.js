@@ -72,13 +72,14 @@
 //     content.innerHTML += `<p>${person}</p>`;
 // });
 
-const link= document.querySelector('a');
-console.log(link.getAttribute('href'));
-link.setAttribute('href', 'https://www.thenetninja.co.uk');
-console.log(link.getAttribute('href'));
-link.innerText= 'Now even cooler site!';
-const mssg= document.querySelector('p');
-console.log(mssg.getAttribute('class'));
-mssg.setAttribute('class', 'success');
-//adding and changing html elements 
-mssg.setAttribute('style', 'color: green;');  
+// const link= document.querySelector('a');
+// console.log(link.getAttribute('href'));
+// link.setAttribute('href', 'https://www.thenetninja.co.uk');
+// console.log(link.getAttribute('href'));
+// link.innerText= 'Now even cooler site!';
+// const mssg= document.querySelector('p');
+// console.log(mssg.getAttribute('class'));
+// mssg.setAttribute('class', 'success');
+// //adding and changing html elements 
+// mssg.setAttribute('style', 'color: green;');
+//contd on jscriptA.js 
