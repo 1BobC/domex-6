@@ -1,5 +1,5 @@
 /*stylesheet for udemy 51 add and remove classes*/
-.error{
+/*.error{
     padding: 10px;
     color: crimson;
     border: 1px dotted crimson;
@@ -9,3 +9,8 @@
     color: limegreen;
     border: 1px dotted limegreen;
 }
+.article-element{
+    padding:10px;
+    color: blue;
+    border: 2px dotted navy;
+}*/
