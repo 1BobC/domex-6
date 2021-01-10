@@ -66,15 +66,18 @@
 //         });
 // });
         //#54 creating and deleting elements
-const ul= document.querySelector("ul");
+//const ul= document.querySelector("ul");
 //ul.remove();
- const items= document.querySelectorAll('li');
- items.forEach(item => {
-         item.addEventListener('click', e => {
-         e.target.remove();
- });
- });
+//  const items= document.querySelectorAll('li');
+//  items.forEach(item => {
+//          item.addEventListener('click', e => {
+//          console.log('event happened in LI');
+//          e.stopPropagation();
+//          e.target.remove();
+//  });
+//  });
         //create element but not through innerHTML method
+const ul= document.querySelector("ul");         //repeated from line 69, it was getting too far away to see!
 const button= document.querySelector('button');
 button.addEventListener('click', () => {
         //ul.innerHTML += '<li>another new todo item</li>';
@@ -82,4 +85,12 @@ button.addEventListener('click', () => {
         li.textContent= 'some other new todo item';
         //ul.append(li);
         ul.prepend(li);
+});
+ul.addEventListener('click', e => {
+        //console.log('event happened in UL');
+        //console.log(e.target);
+        //console.log(e);         //expand click to target and li, expand target li to tagName 'LI'
+        if (e.target.tagName=== "LI"){
+        e.target.remove();
+        }
 });
