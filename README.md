@@ -6,3 +6,4 @@
 "Complete udemy 52 in jscriptA.js and start 53"
 "Complete #53 events eg click and #54 creating and deleting elements Create jscriptB.js for #55 event bubbling and delegation"
 "Complete #55 in jscriptA.js not jscriptB.js Create indexA.html for #56 more DOM events with jscriptB.js"
+"6 of 8 min through #57 building a popup"

@@ -16,19 +16,20 @@
 //  content.classList.add('success');
 
 //challange
-//  const contents= document.querySelectorAll('p')
-//  console.log(contents);  
-//     //console.log(item.innerText);                  use textContent not innerText why?
-//     //item.innerText += "  have I found you?";                     
-//  contents.forEach(item =>{
+ const paras= document.querySelectorAll('p');
+//  console.log(paras);  
+//     console.log(item.innerText);                  //use textContent not innerText why?
+//     item.innerText += "  have I found you?";      //innerText shows only visible text!   
+
+ paras.forEach(item =>{
  
-//      console.log(item.textContent);
+     console.log(item.textContent);
 //     if(item.textContent.includes('error')){         //alternating use of innerText
 //         item.classList.add('error');                // and  textContent             why?
 //     }if(item.innerText.includes('success')){
 //         item.classList.add('success');
 //     }
-//  });
+  });
         // and now - how to toggle classes!
 // const title= document.querySelector('.title');
 // title.classList.toggle('test');
@@ -55,16 +56,20 @@
 // button.addEventListener('click', () => {      //add event listener to that element
 //    console.log('you clicked me');           //add call back function that fires when button clicked
 // });
-// const items= document.querySelectorAll('li');
-// items.forEach(item => {
-//         item.addEventListener('click', e => {    //when click event occurs the browser creates a parameter
-//         //console.log('item has been clicked');     //or event object - call it 'e' ok? Now add e to call back 
-//         //console.log(e);                           //function and remove parenthesis
-//         // console.log(e.target);                      //shaun prefers this one why?
-//         // console.log(item);  
-//         e.target.style.textDecoration= 'line-through';                  
-//         });
-// });
+//  const items= document.querySelectorAll('li');
+//  console.log(items);
+
+//  let random= Math.round(random * 50);
+//items.forEach(item => {
+//        item.addEventListener('click', e => {    //when click event occurs the browser creates a parameter
+        //console.log('item has been clicked');     //or event object - call it 'e' ok? Now add e to call back 
+        // console.log(e);                           //function and remove parenthesis
+        // console.log(e.target);                      //shaun prefers this one why?
+        // console.log(item);  
+        //e.target.style.textDecoration= 'line-through';  
+//        e.target. += random;  //????????????
+//        });
+//     });
         //#54 creating and deleting elements
 //const ul= document.querySelector("ul");
 //ul.remove();
@@ -77,20 +82,20 @@
 //  });
 //  });
         //create element but not through innerHTML method
-const ul= document.querySelector("ul");         //repeated from line 69, it was getting too far away to see!
-const button= document.querySelector('button');
-button.addEventListener('click', () => {
-        //ul.innerHTML += '<li>another new todo item</li>';
-        const li= document.createElement('li');
-        li.textContent= 'some other new todo item';
-        //ul.append(li);
-        ul.prepend(li);
-});
-ul.addEventListener('click', e => {
-        //console.log('event happened in UL');
-        //console.log(e.target);
-        //console.log(e);         //expand click to target and li, expand target li to tagName 'LI'
-        if (e.target.tagName=== "LI"){
-        e.target.remove();
-        }
-});
+// const ul= document.querySelector("ul");         //repeated from line 69, it was getting too far away to see!
+// const button= document.querySelector('button');
+// button.addEventListener('click', () => {
+//         //ul.innerHTML += '<li>another new todo item</li>';
+//         const li= document.createElement('li');
+//         li.textContent= 'some other new todo item';
+//         //ul.append(li);
+//         ul.prepend(li);
+// });
+// ul.addEventListener('click', e => {
+//         //console.log('event happened in UL');
+//         //console.log(e.target);
+//         //console.log(e);         //expand click to target and li, expand target li to tagName 'LI'
+//         if (e.target.tagName=== "LI"){
+//         e.target.remove();
+//         }
+// });
